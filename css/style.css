@@ -5,7 +5,6 @@
 @import url('animate.css');
 
 
-
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
@@ -14,6 +13,9 @@ body {
 	color:#fff;
 	background-color:#fff;
 	overflow-x:hidden;
+}
+#header {
+  background-color: #B2EBF2;
 }
 
 hi,h2,h3,h4,h5,h6 {
@@ -74,7 +76,32 @@ a:hover {
 	text-transform:uppercase;
 	font-weight:600;
 }
-
+.imgLogo{
+  width: 80px;
+}
+@media screen and (max-width: 767px) {
+  .imgLogo{
+    width: 45px;
+  }
+}
+#imgC1{
+  object-fit: cover !important;
+  width: 100%;
+  height: 100vh;
+  margin-right: 0 !important;
+}
+#imgC2{
+  object-fit: cover !important;
+  width: 100%;
+  height: 100vh;
+  margin-right: 0 !important;
+}
+#imgC3{
+  object-fit: cover !important;
+  width: 100%;
+  height: 100vh;
+  margin-right: 0 !important;
+}
 .menu {
 	font-size:12px;
 	float:right;
