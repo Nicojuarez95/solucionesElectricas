@@ -284,8 +284,16 @@ a:hover {
 
 .form-inline {
 	margin-top:50px;	
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
 }
-
+#imgTrabajos{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
 /*===========================
   about
 ============================ */

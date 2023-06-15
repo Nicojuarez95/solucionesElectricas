@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/style.css" rel="stylesheet" />	
+    <link rel="shortcut icon" href="./img/image (1).png" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -22,7 +23,7 @@
   </head>
   <body>	
 	<header id="header">
-        <nav class="navbar navbar-collapse navbar-static-top custom-navbar" role="banner">
+        <nav class="navbar navbar-default navbar-static-top" role="banner">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -62,7 +63,7 @@
             </div> 
             <div class="row contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.js">
+                <form id="main-contact-form" class="contact-form" name="contact-form" onsubmit="sendWhatsApp(event)">
                     <div class="col-sm-5 col-sm-offset-1">
                         <div class="form-group">
                             <label>Nombre *</label>
@@ -74,9 +75,8 @@
                         </div>
                         <div class="form-group">
                             <label>Celular</label>
-                            <input type="number" class="form-control">
-                        </div>
-                                       
+                            <input type="tel" name="phone" class="form-control">
+                        </div>                                  
                     </div>
                     <div class="col-sm-5">
                         <div class="form-group">
@@ -84,10 +84,25 @@
                             <textarea name="message" id="message" required="required" class="form-control" rows="8"></textarea>
                         </div>                        
                         <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Enviar</button>
+                            <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Enviar por WhatsApp</button>
                         </div>
                     </div>
-                </form> 
+                </form>
+                
+                <script>
+                function sendWhatsApp(event) {
+                    event.preventDefault();
+                
+                    var name = document.getElementById('main-contact-form').elements['name'].value;
+                    var email = document.getElementById('main-contact-form').elements['email'].value;
+                    var phone =  document.getElementById('main-contact-form').elements['phone'].value;
+                    var message = document.getElementById('main-contact-form').elements['message'].value;
+                
+                    var whatsappLink = 'https://wa.me/5493584404607?text=' + encodeURIComponent('Nombre: ' + name + '\nEmail: ' + email + '\nCelular: ' + phone + '\nMensaje: ' + message);
+                
+                    window.open(whatsappLink, '_blank');
+                }
+                </script>
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#contact-page-->
@@ -100,10 +115,9 @@
 			<div class="social-icon">
 				<div class="col-md-4">
 					<ul class="social-network">
-						<li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
-					</ul>	
+						<li><a href="https://www.instagram.com/soluciones_electricas.lc/" class="fb tool-tip" title="Facebook" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.facebook.com/ciro.sanches.1" class="twitter tool-tip" title="Twitter" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					</ul>
 				</div>
 			</div>
 			
