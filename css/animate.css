@@ -3139,7 +3139,6 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     animation-duration: 0.5s;
 }
 
-/* originally authored by Angelo Rohit - https://github.com/angelorohit */
 
 @-webkit-keyframes lightSpeedOut {
     0% { -webkit-transform: translateX(0%) skewX(0deg); opacity: 1; }
