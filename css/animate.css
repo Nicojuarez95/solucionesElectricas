@@ -3035,7 +3035,6 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	-o-animation-name: rollIn;
 	animation-name: rollIn;
 }
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes rollOut {
     0% {
