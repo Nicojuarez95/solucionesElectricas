@@ -3091,7 +3091,6 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
 	animation-name: rollOut;
 }
 
-/* originally authored by Angelo Rohit - https://github.com/angelorohit */
 
 @-webkit-keyframes lightSpeedIn {
 	0% { -webkit-transform: translateX(100%) skewX(-30deg); opacity: 0; }
