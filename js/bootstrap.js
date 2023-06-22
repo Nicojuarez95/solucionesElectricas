@@ -2152,8 +2152,6 @@ if (typeof jQuery === 'undefined') {
   }
 
 
-  // AFFIX DATA-API
-  // ==============
 
   $(window).on('load', function () {
     $('[data-spy="affix"]').each(function () {
