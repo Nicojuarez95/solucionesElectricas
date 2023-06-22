@@ -3179,7 +3179,6 @@ body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
     animation-duration: 0.25s;
 }
 
-/* originally authored by Angelo Rohit - https://github.com/angelorohit */
 
 @-webkit-keyframes wiggle {
     0% { -webkit-transform: skewX(9deg); }
