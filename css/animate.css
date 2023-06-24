@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-body { /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+body { 
 	-webkit-backface-visibility: hidden;
 }
 
