@@ -955,7 +955,7 @@ if (typeof jQuery === 'undefined') {
 
   Modal.prototype.enforceFocus = function () {
     $(document)
-      .off('focusin.bs.modal') // guard against infinite focus loop
+      .off('focusin.bs.modal')
       .on('focusin.bs.modal', $.proxy(function (e) {
         if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
           this.$element.trigger('focus')
@@ -1004,7 +1004,7 @@ if (typeof jQuery === 'undefined') {
             : this.hide.call(this)
         }, this))
 
-      if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
+      if (doAnimate) this.$backdrop[0].offsetWidth
 
       this.$backdrop.addClass('in')
 
